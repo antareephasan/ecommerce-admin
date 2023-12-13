@@ -7,7 +7,7 @@ import { useParams, useRouter } from "next/navigation";
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { BillboardColumn } from "./columns";
+import { OrderColumn } from "./columns";
 
 import {
     DropdownMenu,
@@ -21,7 +21,7 @@ import { AlertModal } from "@/components/modals/alert-modal";
 
 
 interface CellActionProps {
-    data: BillboardColumn;
+    data: OrderColumn;
 }
 
 export const CellAction: React.FC<CellActionProps> = ({
